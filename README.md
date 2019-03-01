@@ -16,7 +16,7 @@ This option is the easiest and the recommended way of installing. The Kubernetes
 the cluster it is deployed to. Permissions are granted by a service account and cluster role.   
 
     kubectl create namespace global
-    kubectl apply -f https://raw.githubusercontent.com/kahmed0822/kubernetes-job-monitor/master/.kubernetes/kubernetes-job-monitor.yaml
+    kubectl apply -f https://raw.githubusercontent.com/khahmed/kubernetes-job-monitor/master/.kubernetes/kubernetes-job-monitor.yaml
     
 The Kubernetes job monitor is deployed to the namespace "global", but can be anything.
 
@@ -78,7 +78,7 @@ of query parameters are available.
 
     kubectl create namespace namespace-a
     kubectl create namespace namespace-b
-    kubectl apply -f https://raw.githubusercontent.com/kahmed0822/kubernetes-job-monitor/master/.kubernetes/test-cron-jobs.yaml
+    kubectl apply -f https://raw.githubusercontent.com/khahmed/kubernetes-job-monitor/master/.kubernetes/test-cron-jobs.yaml
 
 ## References
 
