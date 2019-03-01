@@ -33,11 +33,14 @@ def get_jobs(namespace=None, selector=None):
             job_name = None
 
             # Determine job name from CronJob name, skip non CronJob jobs
+            """
             if 'ownerReferences' in item['metadata']:
                 owner_reference = item['metadata']['ownerReferences'][0]
                 if owner_reference['kind'] == 'CronJob':
                     job_name = owner_reference['name']
+            """
 
+            job_name = item['metadata']['name']
             if not job_name:
                 continue
 
